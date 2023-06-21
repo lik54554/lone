@@ -1,0 +1,8 @@
+ function pushStack(curr, stack) {
+        let newStack;
+        if (curr.length) {
+            newStack = curr
+        } else {
+            const children = curr.children;
+            if (!children || !children.length) {
+                return;
